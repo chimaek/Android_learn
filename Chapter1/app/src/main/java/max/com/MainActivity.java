@@ -17,7 +17,13 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 clickCount += 1;
-                Toast.makeText(getApplicationContext(),"ClickCount" + clickCount,Toast.LENGTH_SHORT).show();
+                if (clickCount % 2 == 0) {
+                    Toast.makeText(getApplicationContext(),"ClickCount" + clickCount,Toast.LENGTH_SHORT).show();
+                }else if(clickCount % 3 == 0){
+                    Toast.makeText(getApplicationContext(),"Hello world!",Toast.LENGTH_SHORT).show();
+                }else{
+                    Toast.makeText(getApplicationContext(),"hello",Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
