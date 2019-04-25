@@ -25,7 +25,7 @@ public class SportCar extends Car {
     }
 
     @Override
-    public String getcSpeedText(){
+    public String getcSpeedText() {
         return "스포츠카 입니다." + super.getcSpeedText();
     }
 }
