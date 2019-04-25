@@ -24,7 +24,7 @@
         android:id="@+id/test4"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="510dp"
+        android:layout_marginBottom="8dp"
         android:text="TEST2"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
