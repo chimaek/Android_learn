@@ -15,11 +15,17 @@ public class SportCar extends Car {
     public void closesunroof() {
         openSun = false;
     }
-    public String getSunroof(){
-        if(!openSun){
+
+    public String getSunroof() {
+        if (!openSun) {
             return "선루프는 닫혀있음";
-        }else{
+        } else {
             return "선루프는 열려있다.";
         }
+    }
+
+    @Override
+    public String getcSpeedText(){
+        return "스포츠카 입니다." + super.getcSpeedText();
     }
 }
