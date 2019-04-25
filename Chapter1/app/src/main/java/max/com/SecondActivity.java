@@ -22,15 +22,8 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 clickcount += 1;
 
-                if (clickcount % 2 == 0) {
-                    Toast.makeText(getApplicationContext(), "클릭횟수" + clickcount, Toast.LENGTH_LONG).show();
-                } else if (clickcount % 3 == 0) {
-                    Toast.makeText(getApplicationContext(), "Hello World!", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_LONG).show();
-                }
+                showMsg(clickcount);
             }
-
         });
 
         findViewById(R.id.test4).setOnClickListener(new View.OnClickListener() {
@@ -38,16 +31,18 @@ public class SecondActivity extends AppCompatActivity {
             public void onClick(View v) {
                 clickcount2 += 1;
 
-                if (clickcount2 % 2 == 0) {
-                    Toast.makeText(getApplicationContext(), "클릭횟수" + clickcount2, Toast.LENGTH_LONG).show();
-                } else if (clickcount2 % 3 == 0) {
-                    Toast.makeText(getApplicationContext(), "Hello World!", Toast.LENGTH_LONG).show();
-                } else {
-                    Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_LONG).show();
-                }
+                showMsg(clickcount2);
             }
-
         });
+    }
 
+    private void showMsg(int clickcount) {
+        if (clickcount % 2 == 0) {
+            Toast.makeText(getApplicationContext(), "클릭횟수" + clickcount, Toast.LENGTH_LONG).show();
+        } else if (clickcount % 3 == 0) {
+            Toast.makeText(getApplicationContext(), "Hello World!", Toast.LENGTH_LONG).show();
+        } else {
+            Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_LONG).show();
+        }
     }
 }
