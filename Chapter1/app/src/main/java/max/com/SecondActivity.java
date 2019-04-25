@@ -23,6 +23,7 @@ public class SecondActivity extends AppCompatActivity {
                 clickcount += 1;
 
                 showMsg(clickcount);
+                Toast.makeText(getApplicationContext(), showMsg2(clickcount), Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -32,6 +33,7 @@ public class SecondActivity extends AppCompatActivity {
                 clickcount2 += 1;
 
                 showMsg(clickcount2);
+                Toast.makeText(getApplicationContext(), showMsg2(clickcount2), Toast.LENGTH_SHORT).show();
             }
         });
     }
@@ -45,4 +47,16 @@ public class SecondActivity extends AppCompatActivity {
             Toast.makeText(getApplicationContext(), "Hello", Toast.LENGTH_LONG).show();
         }
     }
+
+    private String showMsg2(int clickcount) {
+        if (clickcount % 2 == 0) {
+            return "클릭횟수:" + clickcount;
+        } else if (clickcount % 3 == 0) {
+            return "Hello Korea!";
+        } else {
+            return "Hello";
+        }
+
+    }
 }
+
