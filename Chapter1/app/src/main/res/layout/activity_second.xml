@@ -13,7 +13,9 @@
         android:layout_height="wrap_content"
 
         android:layout_marginTop="84dp"
+        android:layout_marginBottom="46dp"
         android:text="TEST"
+        app:layout_constraintBottom_toTopOf="@+id/test4"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
@@ -37,9 +39,11 @@
         layout="@layout/activity_main"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
         android:layout_marginBottom="61dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/test4" />
 
 </android.support.constraint.ConstraintLayout>
