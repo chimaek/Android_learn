@@ -50,7 +50,7 @@ public class SecondActivity extends AppCompatActivity {
 
     private String showMsg2(int clickcount) {
         if (clickcount % 2 == 0) {
-            return "클릭횟수:" + clickcount;
+            return "클릭횟수:" + clickcount ;
         } else if (clickcount % 3 == 0) {
             return "Hello Korea!";
         } else {
