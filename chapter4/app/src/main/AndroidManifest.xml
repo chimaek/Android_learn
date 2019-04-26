@@ -9,12 +9,19 @@
 			android:roundIcon="@mipmap/ic_launcher_round"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme">
-		<activity android:name=".BMIKOTLINActivity"
-		          android:label="BMI_Kotlin">
+		<activity android:name=".VariableKotlinActivity"
+		          android:label="Variable_Kotlin">
 		</activity>
-		<activity android:name=".BMIJavaActivity"
-		          android:label="BMI_Java"
-		>
+		<activity android:name=".VariableJavaActivity"
+		          android:label="Variable_Java">
+		</activity>
+		<activity
+				android:name=".BMIKOTLINActivity"
+				android:label="BMI_Kotlin">
+		</activity>
+		<activity
+				android:name=".BMIJavaActivity"
+				android:label="BMI_Java">
 		</activity>
 		<activity android:name=".MainActivity">
 			<intent-filter>
