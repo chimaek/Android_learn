@@ -16,7 +16,6 @@ class controlKotlin : AppCompatActivity() {
 
             try {
                 val number = editText.text.toString().toInt()
-
                 when {
                     number % 2 == 0 -> Toast.makeText(
                         applicationContext,
