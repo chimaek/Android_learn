@@ -17,17 +17,9 @@ class controlKotlin : AppCompatActivity() {
             try {
                 val number = editText.text.toString().toInt()
                 when {
-                    number % 2 == 0 -> Toast.makeText(
-                        applicationContext,
-                        "${number} 는 2의배수입니다.",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    number % 3 == 0 -> Toast.makeText(
-                        applicationContext,
-                        "${number} 는 3의배수입니다.",
-                        Toast.LENGTH_LONG
-                    ).show()
-                    else -> Toast.makeText(applicationContext, "${number}", Toast.LENGTH_LONG).show()
+                    number % 2 == 0 -> toastShort("${number}는 2의배수입니다.")
+                    number % 3 == 0 -> toastShort("${number}는 3의배수입니다.")
+                    else -> toastShort("${number}")
                 }
                 when (number) {
                     in 1..4 -> button5.text = "실행 -4"
