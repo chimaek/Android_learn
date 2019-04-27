@@ -30,7 +30,7 @@ public class controlJAVA extends AppCompatActivity {
                 } else if (number % 3 == 0) {
                     ToastUtilJava.toastShort(number+"은3의배수입니다.");
                 } else {
-                    ToastUtilKotlinKt.toastShort(""+number);
+                    ToastUtil.toastShort(""+number);
                 }
                 switch (number) {
                     case 4:
