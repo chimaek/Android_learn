@@ -9,11 +9,19 @@
 			android:roundIcon="@mipmap/ic_launcher_round"
 			android:supportsRtl="true"
 			android:theme="@style/AppTheme">
-		<activity android:name=".VariableKotlinActivity"
-		          android:label="Variable_Kotlin">
+		<activity android:name=".controlKotlin"
+		          android:label="controlKotlin">
 		</activity>
-		<activity android:name=".VariableJavaActivity"
-		          android:label="Variable_Java">
+		<activity android:name=".controlJAVA"
+		          android:label="controlJAVA">
+		</activity>
+		<activity
+				android:name=".VariableKotlinActivity"
+				android:label="Variable_Kotlin">
+		</activity>
+		<activity
+				android:name=".VariableJavaActivity"
+				android:label="Variable_Java">
 		</activity>
 		<activity
 				android:name=".BMIKOTLINActivity"

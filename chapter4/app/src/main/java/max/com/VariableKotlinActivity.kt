@@ -7,9 +7,9 @@ import java.text.SimpleDateFormat
 import java.util.*
 
 class VariableKotlinActivity : AppCompatActivity() {
-    var clickcount = 0
+    private var clickcount = 0
 
-    val Starttime = System.currentTimeMillis()
+    private val Starttime = System.currentTimeMillis()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_variable)
