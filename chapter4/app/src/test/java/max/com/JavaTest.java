@@ -23,4 +23,14 @@ public class JavaTest {
         Assert.assertEquals(20, person.getAge());
         Assert.assertEquals("get", person.getName());
     }
+    @Test
+    public void testNickname(){
+        PersonJava personJava = new PersonJava("MAX");
+        personJava.setNickname("APPLE");
+        Assert.assertEquals("apple",personJava.getNickname());
+
+        Person person = new Person("join");
+        person.setNickname("JOIN");
+        Assert.assertEquals("join",person.getNickname());
+    }
 }
