@@ -26,11 +26,11 @@ public class controlJAVA extends AppCompatActivity {
                 int number = Integer.parseInt(numberFiled.getText().toString());
 
                 if (number % 2 == 0) {
-                    Toast.makeText(getApplicationContext(), number + "는 2의배수입니다.", Toast.LENGTH_SHORT).show();
+                   ToastUtilJava.toastShort(number+"은2의배수입니다.");
                 } else if (number % 3 == 0) {
-                    Toast.makeText(getApplicationContext(), number + "는 3의배수입니다.", Toast.LENGTH_SHORT).show();
+                    ToastUtilJava.toastShort(number+"은3의배수입니다.");
                 } else {
-                    Toast.makeText(getApplicationContext(), number, Toast.LENGTH_SHORT).show();
+                    ToastUtilKotlinKt.toastShort(""+number);
                 }
                 switch (number) {
                     case 4:
