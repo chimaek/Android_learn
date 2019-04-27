@@ -29,7 +29,7 @@ public class VariableJavaActivity extends AppCompatActivity {
 
         clickCountlabel = findViewById(R.id.clickCount);
 
-        button = findViewById(R.id.button);
+        button = findViewById(R.id.btn);
 
         String timeText = new SimpleDateFormat("HH:mm:ss", Locale.KOREA).format(startTimer);
 
