@@ -97,4 +97,20 @@ class KotlinTest {
         val reuslt = exp2(4)
         Assert.assertEquals(20, reuslt)
     }
+
+    @Test
+    fun testCollectionApi() {
+
+        val list = listOf(1, "2", 3, 4, 5.7, 1, 2)
+        // filter는 컬렉션에서 특정조건이 맞는 항목만 추출하여 새로운 컬렉션 만듬
+        //int타입만 추출
+        println(list.filter { item -> item is Int })
+        println(list.filter { it is Int })
+        // map은 컬렉션에서 아이템을 반환하여 새로운 컬렉션 만듦 String이 만들어짐
+        println(list.map { "value: ${it}" })
+        //필터를 적용하여 새로운 맵을 생성
+        println(list.filter { it is Int }.map { "value : ${it}" })
+        println(list.find{it is Double})
+
+    }
 }
