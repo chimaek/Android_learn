@@ -65,4 +65,10 @@ class KotlinTest {
         Assert.assertEquals(21,animal.map["age"])
 
     }
+
+    @Test
+    fun test7(){
+        val s =SingletonKotlin.log("me")
+        println(s)
+    }
 }

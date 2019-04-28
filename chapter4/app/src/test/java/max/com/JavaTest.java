@@ -48,4 +48,11 @@ public class JavaTest {
 
         Assert.assertEquals(1, cantmove.getSpeed());
     }
+
+    @Test
+    public void testSinglePatton(){
+        SinglePattonJava singlePattonJava = SinglePattonJava.getInstance();
+
+        singlePattonJava.log("hi, singleton");
+    }
 }
