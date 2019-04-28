@@ -110,7 +110,17 @@ class KotlinTest {
         println(list.map { "value: ${it}" })
         //필터를 적용하여 새로운 맵을 생성
         println(list.filter { it is Int }.map { "value : ${it}" })
-        println(list.find{it is Double})
+        println(list.find { it is Double })
+        // 자바 클래스별로 그룹화하여 map의 형태로 반환
+        val map = list.groupBy { it.javaClass }
+        println(map)
 
+        val list2 = listOf(listOf(1,2), listOf(3,4))
+
+        println(list2)
+
+        println(list2.map { "value : ${it}" })
+        //flatMap은 리스트를 평평하게 만들고 변환한다.
+        println(list2.flatMap { it.toList() })
     }
 }
