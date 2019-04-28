@@ -50,38 +50,51 @@ class KotlinTest {
     }
 
     @Test
-    fun test6(){
-        val animal = Animal(mutableMapOf("name" to "cat","age" to 20))
+    fun test6() {
+        val animal = Animal(mutableMapOf("name" to "cat", "age" to 20))
 
-        Assert.assertEquals("cat",animal.name)
+        Assert.assertEquals("cat", animal.name)
 
-        Assert.assertEquals(20,animal.age)
+        Assert.assertEquals(20, animal.age)
 
-        animal.name ="dog"
-        animal.age=21
+        animal.name = "dog"
+        animal.age = 21
 
-        Assert.assertEquals("dog",animal.map["name"])
+        Assert.assertEquals("dog", animal.map["name"])
 
-        Assert.assertEquals(21,animal.map["age"])
+        Assert.assertEquals(21, animal.map["age"])
 
     }
 
     @Test
-    fun test7(){
-        val s =SingletonKotlin.log("me")
+    fun test7() {
+        val s = SingletonKotlin.log("me")
         println(s)
     }
 
     @Test
-    fun testFruit(){
-        val fruit = Fruit("바나나","바나나길이")
-        val fruit2 = Fruit("바나나","바나나길이")
+    fun testFruit() {
+        val fruit = Fruit("바나나", "바나나길이")
+        val fruit2 = Fruit("바나나", "바나나길이")
         println(fruit)
         println(fruit2)
 
-        Assert.assertEquals(fruit,fruit2)
+        Assert.assertEquals(fruit, fruit2)
 
-        Assert.assertEquals(fruit.hashCode(),fruit2.hashCode())
+        Assert.assertEquals(fruit.hashCode(), fruit2.hashCode())
 
+    }
+
+    @Test
+    fun testLambda1() {
+        println(sum(1, 2))
+        Assert.assertEquals(3, sum(1, 2))
+
+        Assert.assertEquals(4, { x: Int, y: Int -> x * y }(2, 2))
+
+        val exp = { x: Int, y: Int -> { z: Int -> (x + y) * z } }
+        val exp2 = exp(3, 2)
+        val reuslt = exp2(4)
+        Assert.assertEquals(20, reuslt)
     }
 }
