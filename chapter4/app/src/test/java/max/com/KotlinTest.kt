@@ -123,4 +123,9 @@ class KotlinTest {
         //flatMap은 리스트를 평평하게 만들고 변환한다.
         println(list2.flatMap { it.toList() })
     }
+    @Test
+    fun testEXT(){
+        val str = "Hello !"
+        Assert.assertEquals("!",str.lastString())
+    }
 }
