@@ -48,4 +48,21 @@ class KotlinTest {
         user.name = "join"
         user.name = "james"
     }
+
+    @Test
+    fun test6(){
+        val animal = Animal(mutableMapOf("name" to "cat","age" to 20))
+
+        Assert.assertEquals("cat",animal.name)
+
+        Assert.assertEquals(20,animal.age)
+
+        animal.name ="dog"
+        animal.age=21
+
+        Assert.assertEquals("dog",animal.map["name"])
+
+        Assert.assertEquals(21,animal.map["age"])
+
+    }
 }
