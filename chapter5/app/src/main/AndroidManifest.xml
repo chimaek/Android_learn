@@ -9,10 +9,16 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
+        <activity android:name=".ConstarintLayoutActvity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
         <activity android:name=".AbsoluteActivity">
         </activity>
         <activity android:name=".TestActivity">
-
         </activity>
         <activity android:name=".ResultActivity">
         </activity>
@@ -21,11 +27,7 @@
         <activity android:name=".ConstellationActivity">
         </activity>
         <activity android:name=".MainActivity">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
 
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter>
         </activity>
     </application>
 
