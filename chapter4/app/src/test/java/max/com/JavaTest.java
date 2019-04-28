@@ -61,4 +61,11 @@ public class JavaTest {
         String lastString = StringExtKt.lastString("apple");
         Assert.assertEquals("e", lastString);
     }
+    @Test
+    public void testNull(){
+        NPE npe = new NPE();
+        Assert.assertEquals(3,npe.strLen("abc"));
+        Assert.assertEquals(0,npe.strLen(null));
+    }
+
 }
