@@ -7,4 +7,32 @@
         android:layout_height="match_parent"
         tools:context=".NameActvity">
 
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/GuideLine1"
+            app:layout_constraintGuide_begin="120dp"/>
+    <android.support.constraint.Guideline
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/GuideLine2" app:layout_constraintGuide_percent="0.6"/>
+    <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp" app:srcCompat="@drawable/name"
+            android:id="@+id/imageView2" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/GuideLine1" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/GuideLine2"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"/>
+    <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/editText" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent" android:layout_marginStart="32dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="32dp"
+            app:layout_constraintEnd_toEndOf="parent" app:layout_constraintVertical_bias="0.0"
+            android:hint="이름을 입력하세요"/>
 </android.support.constraint.ConstraintLayout>
