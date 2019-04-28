@@ -2,6 +2,7 @@ package max.com
 
 import java.io.InputStreamReader
 import java.net.URL
+import kotlin.properties.Delegates
 
 class User {
     var nickname by DelegateString()
@@ -12,6 +13,10 @@ class User {
     val http by lazy {
         println("lazy start")
         InputStreamReader(URL("http://www.naver.com").openConnection().getInputStream()).readText()
+    }
+    //observable name프로퍼티 값이 변경될경우 자동으로실행
+    var name: String by Delegates.observable("") { property, oldValue, newValue ->
+        println("기존값:${oldValue} 새로운값: ${newValue}")
     }
 
 }

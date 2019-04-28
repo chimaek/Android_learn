@@ -24,11 +24,28 @@ class KotlinTest {
         Assert.assertEquals("kan", person.nickname)
 
     }
-    @Test
-    fun testUser(){
-        var user =User()
-        user.nickname ="death Note"
 
-        Assert.assertEquals("DEATH NOTE",user.nickname)
+    @Test
+    fun testUser() {
+        var user = User()
+        user.nickname = "death Note"
+
+        Assert.assertEquals("DEATH NOTE", user.nickname)
+    }
+
+    @Test
+    fun test4() {
+        val user = User()
+
+        println("not init")
+        Assert.assertNotNull(user.http)
+    }
+
+    @Test
+    fun test5() {
+        val user = User()
+
+        user.name = "join"
+        user.name = "james"
     }
 }
