@@ -1,7 +1,7 @@
 package max.com;
 
-public class CantMove extends MoveObject{
-    public CantMove(){
+public class CantMove extends MoveObject {
+    public CantMove() {
         this.speed = 0;
     }
 
@@ -9,4 +9,5 @@ public class CantMove extends MoveObject{
     public void addSpeed(int param) {
 
     }
+
 }

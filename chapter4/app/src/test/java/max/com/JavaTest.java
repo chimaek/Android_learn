@@ -36,16 +36,16 @@ public class JavaTest {
     }
 
     @Test
-    public void testMove(){
+    public void testMove() {
         MoveObject moveObject = new MoveObject();
 
-        int acc = Calculator.calACC(moveObject,3);
-        Assert.assertEquals(1,moveObject.getSpeed());
+        int acc = Calculator.calACC(moveObject, 3);
+        Assert.assertEquals(1, moveObject.getSpeed());
 
         MoveObject cantmove = new CantMove();
 
-        acc =Calculator.calACC(cantmove,3);
+        acc = Calculator.calACC(cantmove, 3);
 
-        Assert.assertEquals(1,cantmove.getSpeed());
+        Assert.assertEquals(1, cantmove.getSpeed());
     }
 }

@@ -24,4 +24,11 @@ class KotlinTest {
         Assert.assertEquals("kan", person.nickname)
 
     }
+    @Test
+    fun testUser(){
+        var user =User()
+        user.nickname ="death Note"
+
+        Assert.assertEquals("DEATH NOTE",user.nickname)
+    }
 }
