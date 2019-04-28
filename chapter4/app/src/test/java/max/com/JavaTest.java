@@ -35,24 +35,30 @@ public class JavaTest {
         Assert.assertEquals("join", person.getNickname());
     }
 
+//    @Test
+//    public void testMove() {
+//        MoveObject moveObject = new MoveObject();
+//
+//        int acc = Calculator.calACC(moveObject, 3);
+//        Assert.assertEquals(1, moveObject.getSpeed());
+//
+//        MoveObject cantmove = new CantMove();
+//
+//        acc = Calculator.calACC(cantmove, 3);
+//
+//        Assert.assertEquals(1, cantmove.getSpeed());
+//    }
+
     @Test
-    public void testMove() {
-        MoveObject moveObject = new MoveObject();
-
-        int acc = Calculator.calACC(moveObject, 3);
-        Assert.assertEquals(1, moveObject.getSpeed());
-
-        MoveObject cantmove = new CantMove();
-
-        acc = Calculator.calACC(cantmove, 3);
-
-        Assert.assertEquals(1, cantmove.getSpeed());
-    }
-
-    @Test
-    public void testSinglePatton(){
+    public void testSinglePatton() {
         SinglePattonJava singlePattonJava = SinglePattonJava.getInstance();
 
         singlePattonJava.log("hi, singleton");
+    }
+
+    @Test
+    public void testExt() {
+        String lastString = StringExtKt.lastString("apple");
+        Assert.assertEquals("e", lastString);
     }
 }

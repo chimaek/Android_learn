@@ -16,7 +16,7 @@ class ExtTest {
     }
 }
 
-fun test(){
+fun test() {
     "Test".lastString()
 
 }
