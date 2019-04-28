@@ -1,6 +1,7 @@
 package max.com
 
 import android.content.Intent
+import android.net.Uri
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -29,8 +30,12 @@ class TestActivity : AppCompatActivity() {
             val intent = Intent(this@TestActivity, ResultActivity::class.java)
             startActivity(intent)
         }
-    }
 
+    }
+    fun callweb(view:View){
+        val intent =Intent(Intent.ACTION_VIEW, Uri.parse("http://www.naver.com"))
+        startActivity(intent)
+    }
 
     /*xml정의*/
 
