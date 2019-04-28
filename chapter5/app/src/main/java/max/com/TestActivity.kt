@@ -40,8 +40,8 @@ class TestActivity : AppCompatActivity() {
     /*xml정의*/
 
     fun getConstellation(view: View) {
-        startActivity(intent)
         val intent = Intent(this@TestActivity, ConstellationActivity::class.java)
+        startActivity(intent)
     }
 
 
