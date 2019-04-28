@@ -17,4 +17,15 @@ public class FruitJava {
         }
         return false;
     }
+
+    @Override
+    public int hashCode() {
+        int hash = 7;
+
+        hash = 31 * hash + (fruitName == null ? 0 : fruitName.hashCode());
+
+        hash = 31 * hash + (description == null ? 0 : description.hashCode());
+
+        return hash;
+    }
 }

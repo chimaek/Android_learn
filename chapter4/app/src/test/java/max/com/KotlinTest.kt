@@ -71,4 +71,17 @@ class KotlinTest {
         val s =SingletonKotlin.log("me")
         println(s)
     }
+
+    @Test
+    fun testFruit(){
+        val fruit = Fruit("바나나","바나나길이")
+        val fruit2 = Fruit("바나나","바나나길이")
+        println(fruit)
+        println(fruit2)
+
+        Assert.assertEquals(fruit,fruit2)
+
+        Assert.assertEquals(fruit.hashCode(),fruit2.hashCode())
+
+    }
 }
