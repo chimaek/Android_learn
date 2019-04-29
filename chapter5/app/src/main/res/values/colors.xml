@@ -3,4 +3,24 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <!--결과화면에서 사용할 컬러-->
+    <color name="PResult">#2196F3</color>
+    <color name="RDResult">#1976D2</color>
+    <color name="CAResult">#FF4081</color>
+
+    <!--별자리 입력화면 컬러-->
+    <color name="PRC">#673AB7</color>
+    <color name="RRC">#512DA8</color>
+    <color name="CAC">#7E57C2</color>
+    <color name="CCC">#556080</color>
+    <color name="CBC">#673AB7</color>
+
+    <!--이름 화면 컬러-->
+
+    <color name="CPN">#F9A11F</color>
+    <color name="CPDN">#EF6C00</color>
+    <color name="CAN">#FFC107</color>
+    <color name="CCN">#fcd837</color>
+    <color name="CBN">#F9A11F</color>
+
 </resources>
