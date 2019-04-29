@@ -8,4 +8,38 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+<!--결과화면 테마-->
+    <style name="AppTheme.Result" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/PResult</item>
+        <item name="colorPrimaryDark">@color/RDResult</item>
+        <item name="colorAccent">@color/CAResult</item>
+    </style>
+
+    <!--별자리 입력화면 테마-->
+    <style name="AppTheme.Constellation" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/PRC</item>
+        <item name="colorPrimaryDark">@color/RRC</item>
+        <item name="colorAccent">@color/CAC</item>
+        <!--버튼-->
+        <item name="colorButtonNormal">@color/CBC</item>
+        <!--버튼등 텍스트 컬러-->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+    <style name="AppTheme.Name" parent="AppTheme">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/CPN</item>
+        <item name="colorPrimaryDark">@color/CPDN</item>
+        <item name="colorAccent">@color/CAN</item>
+        <!--버튼-->
+        <item name="colorButtonNormal">@color/CBN</item>
+        <!--버튼등 텍스트 컬러-->
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+
+
 </resources>
