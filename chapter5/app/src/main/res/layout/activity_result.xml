@@ -29,40 +29,62 @@
             app:layout_constraintGuide_percent="0.92"/>
     <view android:layout_width="314dp" android:layout_height="165dp"
           class="android.support.v7.widget.AppCompatTextView"
-          id="@+id/view" android:id="@+id/ ResultLabel"
-          android:textSize="60sp" tools:text="홍길동님의\n로또번호입니다" android:gravity="center" android:maxLines="3"
+          id="@+id/view" android:id="@+id/ResultLabel"
+          android:textSize="60sp" android:gravity="center" android:maxLines="3"
           app:autoSizeMaxTextSize="60sp" app:autoSizeStepGranularity="1sp" app:autoSizeTextType="uniform"
-          tools:layout_editor_absoluteY="8dp" tools:layout_editor_absoluteX="49dp"/>
+          android:layout_marginStart="8dp"
+          app:layout_constraintStart_toStartOf="@+id/guideline8" android:layout_marginEnd="8dp"
+          app:layout_constraintEnd_toStartOf="@+id/guideline9" android:layout_marginTop="8dp"
+          app:layout_constraintTop_toTopOf="parent" android:layout_marginBottom="8dp"
+          app:layout_constraintBottom_toTopOf="@+id/imageView3" android:text="홍길동님의\n로또번호입니다"/>
     <ImageView
             android:layout_width="44dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_01"
             android:id="@+id/imageView3"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="41dp"/>
+            app:layout_constraintStart_toStartOf="@+id/guideline8" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView4" android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline6"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline7"/>
     <ImageView
             android:layout_width="44dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_03"
             android:id="@+id/imageView4"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="93dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageView3" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView5" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"/>
     <ImageView
             android:layout_width="45dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_10"
             android:id="@+id/imageView5"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="153dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageView4" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView6" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"/>
     <ImageView
             android:layout_width="44dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_11"
             android:id="@+id/imageView6"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="214dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageView5"
+            app:layout_constraintHorizontal_bias="0.5" app:layout_constraintEnd_toStartOf="@+id/imageView7"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline6"/>
     <ImageView
             android:layout_width="44dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_21"
             android:id="@+id/imageView7"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="274dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageView6" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/imageView8" android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toTopOf="@+id/guideline7" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toTopOf="@+id/guideline6"/>
     <ImageView
             android:layout_width="44dp"
             android:layout_height="105dp" app:srcCompat="@drawable/ball_32"
             android:id="@+id/imageView8"
-            tools:layout_editor_absoluteY="188dp" tools:layout_editor_absoluteX="326dp"/>
+            app:layout_constraintStart_toEndOf="@+id/imageView7" app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintEnd_toStartOf="@+id/guideline9" android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/guideline7"
+            android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="@+id/guideline6"/>
     <ImageView
             android:layout_width="0dp"
             android:layout_height="0dp" app:srcCompat="@drawable/money"
