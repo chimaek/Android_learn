@@ -34,13 +34,29 @@ class MainActivity : AppCompatActivity() {
         return Random.nextInt(45) + 1
     }
 
-    fun getLandomLotto(): MutableList<Int> {
+    fun getLandomLotto():MutableList<Int>{
+        val list = mutableListOf<Int>()
 
-        val lottoNum = mutableListOf<Int>()
-
-        for (i in 1..6) {
-            lottoNum.add(getRandom())
+        for(number in 1..45){
+            list.add(number)
         }
-        return lottoNum
+        list.shuffle()
+
+        return list.subList(0,6)
     }
+    // 중복숫자 제거
+//    fun getLandomLotto(): MutableList<Int> {
+//
+//        val lottoNum = mutableListOf<Int>()
+//
+//        for (i in 1..6) {
+//            var number = 0
+//            do{
+//                number = getRandom()
+//            }while (lottoNum.contains(number))
+//            lottoNum.add(number)
+//        }
+//
+//        return lottoNum
+//    }
 }
