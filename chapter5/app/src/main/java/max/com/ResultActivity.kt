@@ -2,8 +2,11 @@ package max.com
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
+import android.text.TextUtils
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_result.*
+import java.text.SimpleDateFormat
+import java.util.*
 
 class ResultActivity : AppCompatActivity() {
 
@@ -15,6 +18,13 @@ class ResultActivity : AppCompatActivity() {
         setContentView(R.layout.activity_result)
 
         val result = intent.getIntegerArrayListExtra("result")
+        val name = intent.getStringExtra("name")
+
+        ResultLabel.text = "랜덤으로 생성된\n 로또번호입니다."
+
+        if(!TextUtils.isEmpty(name)){
+            ResultLabel.text = "${name} 님의 \n ${SimpleDateFormat("yyyy년 MM월 dd일").format(Date())}\n 로또번호입니다."
+        }
         // 전달받은 경우에만 실행
         result?.let {
             // 정렬해서 업데이트
